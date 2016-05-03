@@ -1,0 +1,107 @@
+<#import "../layout/defaultLayout.ftl.html" as layout> 
+<@layout.myLayout "Earthdawn Character WebTool">
+
+<h1>Earthdawn Character WebTool</h1>
+
+<div class="btn-group">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		${i18n("menu.home.file")}
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li><a href="#new">${i18n("menu.home.file.new")}</a></li>
+		<li><a href="#open">${i18n("menu.home.file.open")}</a></li>
+		<li><a href="#save">${i18n("menu.home.file.save")}</a></li>
+		<li><a href="#saveas">${i18n("menu.home.file.saveas")}</a></li>
+	</ul>
+</div>
+
+<div class="btn-group">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		${i18n("menu.home.extra")}
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li><a href="#extra">${i18n("menu.home.extra")}</a></li>
+	</ul>
+</div>
+
+<div class="btn-group">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		${i18n("menu.home.optionalrules")}
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li><a href="#">${i18n("menu.home.optionalrules.ALIGNINGTALENTSANDSKILLS")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.ATTRIBUTEBASEDMOVEMENT")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.AUTOINCREMENTDISCIPLINETALENTS")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.AUTOINSERTLEGENDPOINTSPENT")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.DEFAULTOPTIONALTALENT")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.ENDURINGARMORBYSTRENGTH")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.KARMALEGENDPOINTCOST")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.KEEPLEGENDPOINTSYNC")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.LANGUAGESASINDIVIDUALSKILLS")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.LEGENDPOINTSFORATTRIBUTEINCREASE")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.QUESTORTALENTNEEDLEGENDPOINTS")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.SHOWDEFAULTSKILLS")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.SPELLLEGENDPOINTCOST")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.THREADITEMDOSTACK")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.UNITS")}</a></li>
+		<li><a href="#">${i18n("menu.home.optionalrules.save")}</a></li>
+	</ul>
+</div>
+
+<div class="btn-group">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		${i18n("menu.home.view")}
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li><a href="#">${i18n("menu.home.view")}</a></li>
+	</ul>
+</div>
+
+<div class="btn-group">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		${i18n("menu.home.export")}
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li class="dropdown-header">${i18n("menu.home.export.csv")}</li>
+		<li><a href="#">${i18n("menu.home.export.csv.skill")}</a></li>
+		<li><a href="#">${i18n("menu.home.export.csv.spell")}</a></li>
+		<li><a href="#">${i18n("menu.home.export.csv.talent")}</a></li>
+		<li><a href="#">${i18n("menu.home.export.csv.item")}</a></li>
+		<li role="separator" class="divider"></li>
+		<li class="dropdown-header">${i18n("menu.home.export.json")}</li>
+		<li><a href="#">${i18n("menu.home.export.json.xml")}</a></li>
+		<li><a href="#">${i18n("menu.home.export.json.object")}</a></li>
+		<li role="separator" class="divider"></li>
+		<li class="dropdown-header">${i18n("menu.home.export.pdf")}</li>
+		<li><a href="#">${i18n("menu.home.export.pdf.generic")}</a></li>
+		<li><a href="#">${i18n("menu.home.export.pdf.ajfelmordom")}</a></li>
+		<li><a href="#">${i18n("menu.home.export.pdf.ajfelmordomPl")}</a></li>
+		<li><a href="#">${i18n("menu.home.export.pdf.redbrickextended")}</a></li>
+		<li><a href="#">${i18n("menu.home.export.pdf.redbrickSimple")}</a></li>
+		<li><a href="#">${i18n("menu.home.export.pdf.spellcards0")}</a></li>
+		<li><a href="#">${i18n("menu.home.export.pdf.spellcards1")}</a></li>
+		<li role="separator" class="divider"></li>
+		<li><a href="#">${i18n("menu.home.export.item")}</a></li>
+	</ul>
+</div>
+
+<div class="btn-group">
+	<button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		${i18n("menu.home.help")}
+		<span class="caret"></span>
+	</button>
+	<ul class="dropdown-menu">
+		<li><a href="#wiki">${i18n("menu.home.help.wiki")}</a></li>
+		<li><a href="#faq">${i18n("menu.home.help.faq")}</a></li>
+		<li><a href="#about">${i18n("menu.home.help.about")}</a></li>
+		<li><a href="#bug">${i18n("menu.home.help.bug")}</a></li>
+		<li><a href="#newversion">${i18n("menu.home.help.newversion")}</a></li>
+	</ul>
+</div>
+
+</@layout.myLayout>

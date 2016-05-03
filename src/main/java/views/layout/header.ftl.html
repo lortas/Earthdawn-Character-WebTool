@@ -1,0 +1,29 @@
+<div class="navbar navbar-inverse navbar-fixed-top">
+	<div class="container-fluid">
+		<div class="navbar-header">
+			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse" aria-expanded="false">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<a class="navbar-brand" style="padding-top: 10px" href="/"><img alt="Earthdawn Character WebTools" src="/assets/images/logo.png" height="30"></a>
+		</div>
+		<div class="navbar-collapse collapse">
+			<ul class="nav navbar-nav">
+				<li ${(pageGeneral??)?then('class=active','')}><a href="/general">${i18n("menu.general")}</a></li>
+				<li ${(pageDisciplines??)?then('class=active','')}><a href="/disciplines">${i18n("menu.disciplines")}</a></li>
+				<li ${(pageAttributes??)?then('class=active','')}><a href="/attributes">${i18n("menu.attributes")}</a></li>
+				<li ${(pageKnacks??)?then('class=active','')}><a href="/knacks">${i18n("menu.knacks")}</a></li>
+				<li ${(pageSkills??)?then('class=active','')}><a href="/skills">${i18n("menu.skills")}</a></li>
+				<li ${(pageLanguages??)?then('class=active','')}><a href="/languages">${i18n("menu.languages")}</a></li>
+				<li ${(pageExperience??)?then('class=active','')}><a href="/experience">${i18n("menu.experience")}</a></li>
+				<li ${(pageKarma??)?then('class=active','')}><a href="/karma">${i18n("menu.karma")}</a></li>
+				<li ${(pageDevotionpoints??)?then('class=active','')}><a href="/devotionpoints">${i18n("menu.devotionpoints")}</a></li>
+				<li ${(pageInventory??)?then('class=active','')}><a href="/inventory">${i18n("menu.inventory")}</a></li>
+			</ul>
+		</div>
+		<!--/.navbar-collapse -->
+	</div>
+</div>
+
+
