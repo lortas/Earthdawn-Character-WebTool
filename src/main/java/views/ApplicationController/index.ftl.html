@@ -10,7 +10,7 @@
 	</button>
 	<ul class="dropdown-menu">
 		<li><a href="#new">${i18n("menu.home.file.new")}</a></li>
-		<li><a href="#open">${i18n("menu.home.file.open")}</a></li>
+		<li><button type="button" class="btn btn-lg" data-toggle="modal" data-target="#openFileDialog">${i18n("menu.home.file.open")}</button></li>
 		<li><a href="#save">${i18n("menu.home.file.save")}</a></li>
 		<li><a href="#saveas">${i18n("menu.home.file.saveas")}</a></li>
 	</ul>
@@ -47,6 +47,7 @@
 		<li><a href="#">${i18n("menu.home.optionalrules.SPELLLEGENDPOINTCOST")}</a></li>
 		<li><a href="#">${i18n("menu.home.optionalrules.THREADITEMDOSTACK")}</a></li>
 		<li><a href="#">${i18n("menu.home.optionalrules.UNITS")}</a></li>
+		<li role="separator" class="divider"></li>
 		<li><a href="#">${i18n("menu.home.optionalrules.save")}</a></li>
 	</ul>
 </div>
@@ -102,6 +103,29 @@
 		<li><a href="#bug">${i18n("menu.home.help.bug")}</a></li>
 		<li><a href="#newversion">${i18n("menu.home.help.newversion")}</a></li>
 	</ul>
+</div>
+
+<div class="modal fade" id="openFileDialog" tabindex="-1" role="dialog" aria-labelledby="openFileDialogLabel">
+	<div class="modal-dialog" role="document">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+				<h4 class="modal-title" id="openFileDialogLabel">${i18n("dialog.open.title")}</h4>
+			</div>
+			<div class="modal-body">
+				<form>
+					<div class="form-group">
+						<label for="uploadFile" class="control-label">File to Upload:</label>
+						<input class="form-control" id="uploadFile" name="File" type="file" accept="text/*">
+					</div>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">${i18n("dialog.open.cancelButton")}</button>
+				<button type="button" class="btn btn-primary">${i18n("dialog.open.openButton")}</button>
+			</div>
+		</div>
+	</div>
 </div>
 
 </@layout.myLayout>
